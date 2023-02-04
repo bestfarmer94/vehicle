@@ -6,8 +6,17 @@ public class Vehicle {
     private String state;
 
     Vehicle(){
-        this.refuel = 100;
-        this.speed = 0;
+        number = (int)(Math.random()*10000);
+        refuel = 100;
+        speed = 0;
+    }
+
+    public int getRefuel() {
+        return refuel;
+    }
+
+    public int getNumber() {
+        return number;
     }
 
     public void setState(String state) {
@@ -31,11 +40,9 @@ public class Vehicle {
     }
 
     void change_state(){
-        state = state.equals("운행") ? "차고지행" : "운행";
-        System.out.println("상태 = " + state);
     }
 
-    void boarding(){
+    void boarding(int number){
     }
 
     void change_refuel(int change){
