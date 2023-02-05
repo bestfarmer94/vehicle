@@ -4,7 +4,7 @@ public class Vehicle {
     private int refuel;
     private int speed;
     private String state;
-
+    // 인터페이스로 바꿔야 할 수도 있음.
     Vehicle(){
         number = (int)(Math.random()*10000);
         refuel = 100;
